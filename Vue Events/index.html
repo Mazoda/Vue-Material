@@ -18,14 +18,14 @@
     </header>
     <section id="events">
       <h2>Events in Action</h2>
-      <input type="number" v-model="number" style="display: block; margin-left: auto;margin-right: auto;margin-bottom: 10px;"/>
+      <input type="number" v-model="number" class="iput-field" />
       <button @click="add">Add</button>
-      <button @click="sub">Remove</button>
+      <button @click.right="sub">Remove</button>
       <button @click="clear">clear</button>
 
       <p>Result: {{ counter }}</p>
-      <input type="text" v-on:input="setName" />
-      <p>Your Name is {{name}}</p>
+      <input type="text" v-on:input="setName" v-on:keyup.enter="confirmedName" />
+      <p>Your Name is {{confirmedName}}</p>
     </section>
   </body>
 </html>
