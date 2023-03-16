@@ -4,7 +4,7 @@ const app = Vue.createApp({
       counter: 0,
       number: 0,
       name: "",
-      confirmedName:"",
+      confirmedNameS: "",
     };
   },
   methods: {
@@ -21,7 +21,7 @@ const app = Vue.createApp({
       this.name = event.target.value;
     },
     confirmedName() {
-      this.confirmedName = name;
+      this.confirmedNameS = this.name;
     },
   },
 });
