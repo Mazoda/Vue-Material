@@ -22,8 +22,16 @@
       <button @click="add">Add</button>
       <button @click="sub">Remove</button>
       <button @click="clear">clear</button>
+      <!-- Dont use methods in curly brackets because they will get excuted
+      everytime anything changes -->
       <p>Result: {{ counter }}</p>
-      <input type="text" @keyup.enter="confirmedName" v-on:input="setName" placeholder="Press Enter"/>
+      <input
+        type="text"
+        @keyup.enter="confirmedName"
+        v-on:input="setName"
+        placeholder="Press Enter"
+      />
+      <!-- confirmedNameS is only printed when pressing Enter key -->
       <p>Your Name is {{confirmedNameS}}</p>
     </section>
   </body>
