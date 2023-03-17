@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+/* You can acheive the same design but in a different way but i did it using flex */
+#parent {
+  max-width: 500px;
+  margin: 20px auto;
+}
+h1 {
+  width: 100%;
+  font-weight: bold;
+  padding: 30px;
+  color: white;
+  background-color: #4fc08d;
+  border-radius: 1rem;
+  text-align: center;
+}
+.container {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 1rem;
+  margin-top: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+button {
+  color: white;
+  background-color: rgb(253, 0, 76);
+  padding: 0.5rem;
+  margin-left: 5px;
+}
+h2 {
+  width: 100%;
+  color: black;
+  background-color: #4fc08d;
+  font-weight: bold;
+  border-radius: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
