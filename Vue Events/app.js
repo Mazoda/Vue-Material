@@ -4,9 +4,25 @@ const app = Vue.createApp({
       counter: 0,
       number: 0,
       name: "",
-      confirmedNameS: "",
+      // confirmedNameS: "",
+      fullname: "",
     };
   },
+  /*
+  Watch method excutes whenever the name value changes so the fullname also changes
+  but the computed properties change when dependences change not only the name.
+
+   */
+  watch: {
+    name(newValue) {
+      if (newValue === "") {
+        this.fullname = "";
+      } else {
+        this.fullname = newValue + " Mutlak";
+      }
+    },
+  },
+  computed: {},
   methods: {
     add() {
       this.counter += this.number;

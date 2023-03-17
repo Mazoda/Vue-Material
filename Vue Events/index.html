@@ -16,7 +16,7 @@
     <header>
       <h1>Vue Events</h1>
     </header>
-    <section id="events">
+    <section id="events"> 
       <h2>Events in Action</h2>
       <input type="number" v-model="number" class="iput-field" />
       <button @click="add">Add</button>
@@ -29,10 +29,9 @@
         type="text"
         @keyup.enter="confirmedName"
         v-on:input="setName"
-        placeholder="Press Enter"
       />
       <!-- confirmedNameS is only printed when pressing Enter key -->
-      <p>Your Name is {{confirmedNameS}}</p>
+      <p>Your FullName is {{fullname}}</p>
     </section>
   </body>
 </html>
