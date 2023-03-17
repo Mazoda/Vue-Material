@@ -16,7 +16,7 @@
     <header>
       <h1>Vue Events</h1>
     </header>
-    <section id="events"> 
+    <section id="events">
       <h2>Events in Action</h2>
       <input type="number" v-model="number" class="iput-field" />
       <button @click="add">Add</button>
@@ -25,13 +25,11 @@
       <!-- Dont use methods in curly brackets because they will get excuted
       everytime anything changes -->
       <p>Result: {{ counter }}</p>
-      <input
-        type="text"
-        @keyup.enter="confirmedName"
-        v-on:input="setName"
-      />
-      <!-- confirmedNameS is only printed when pressing Enter key -->
-      <p>Your FullName is {{fullname}}</p>
+      <input type="text" v-model="name" />
+      <input type="text" v-model="lastName" />
+      <button @click="resetInput">Reset Input</button>
+      <!-- Displays Fullname using fullnameS computed Function -->
+      <p>Your FullName is {{fullnameS}}</p>
     </section>
   </body>
 </html>
